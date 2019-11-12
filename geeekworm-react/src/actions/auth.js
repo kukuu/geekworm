@@ -4,11 +4,13 @@ import setAuthorizationHeader from "../utils/setAuthorizationHeader";
 
 export const userLoggedIn = user => ({
   type: USER_LOGGED_IN,
+  //payload
   user
 });
 
 export const userLoggedOut = () => ({
   type: USER_LOGGED_OUT
+  //No payload
 });
 
 export const login = credentials => dispatch =>
